@@ -8,7 +8,8 @@ Python API using micro framework Flask.
 * PostgreSQL
 
 ### How to use
-After clone this project from github, you will use the requirements.txt to manage your virtual environment
+After clone this project from github, you will use the requirements.txt to manage your virtual environment.
+Create an environment variable called SQLALCHEMY_DATABASE_URI with database connection (eg: postgresql://postgres:a@localhost/banco) or change it on app.py file.
 
 ```
 git clone https://github.com/vitoralves/python-rest-api
