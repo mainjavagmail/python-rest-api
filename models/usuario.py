@@ -1,11 +1,12 @@
 from sql_alchemy import bd
 
+
 class UsuarioModel(bd.Model):
     __tablename__ = 'usuarios'
 
     usuario_id = bd.Column(bd.Integer, primary_key=True)
     login = bd.Column(bd.String(40))
-    senha = bd.Column(bd.String(40))
+    senha = bd.Column(bd.String(95))
 
     def __init__(self, login, senha):
         self.login = login
